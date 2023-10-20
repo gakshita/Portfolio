@@ -1,0 +1,10 @@
+#root {
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 2rem; */
+    text-align: center;
+    font-family: Poppins;
+}
+* {
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
