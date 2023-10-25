@@ -18,7 +18,9 @@ const Navbar = () => {
     return (
         <NavbarCss>
             <div className="nav">
-                <div className="left">Akshita</div>
+                <div className="left">
+                    <img src="/Akshita.png" alt="logo" className="logo" />
+                </div>
                 <div className="right">
                     <a
                         href="https://www.linkedin.com/in/akshita-goyal15/"

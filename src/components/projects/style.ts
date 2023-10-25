@@ -9,9 +9,9 @@ export const Project = styled.div`
     margin: 20px 0 0 20px;
     font-size: 18px;
     max-width: 288px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     img {
         height: 177px;
-        width: 272px;
         margin-bottom: 10px;
         object-fit: cover;
     }

@@ -8,6 +8,7 @@ export const Skill = styled.div`
     flex-direction: column;
     margin: 20px 0 0 20px;
     font-size: 14px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     img {
         height: 40px;
         max-width: 40px;

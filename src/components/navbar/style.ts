@@ -21,6 +21,12 @@ export const NavbarCss = styled.div`
         font-weight: 600;
         font-size: 20px;
         letter-spacing: 3px;
+        display: flex;
+
+        img {
+            width: 90px;
+            margin: auto;
+        }
     }
 
     .right {

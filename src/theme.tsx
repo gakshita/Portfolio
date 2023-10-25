@@ -3,7 +3,7 @@ const darktheme = {
     secondary: "#eee",
     border: "#878787",
     text: "#000",
-    background: "antiquewhite",
+    background: "#000000",
     indicator: "#ccc"
 };
 
