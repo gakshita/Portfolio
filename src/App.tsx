@@ -6,6 +6,7 @@ import Navbar from "./components/navbar";
 import { ThemeContext, ThemeProvider } from "styled-components";
 import { Root, Footer } from "./style";
 import theme from "./theme";
+import { ITheme } from "./theme";
 import Header from "./components/header";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
@@ -15,7 +16,7 @@ function App() {
     const [currentTheme, setCurrentTheme] = useState("light");
 
     return (
-        <ThemeProvider theme={theme[currentTheme]}>
+        <ThemeProvider theme={theme[currentTheme as keyof ITheme]}>
             <Root>
                 <Navbar />
                 <div className="container">
