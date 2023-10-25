@@ -14,10 +14,10 @@ const projects = [
     },
     {
         name: "Portfolio",
-        img: "./staking.png",
+        img: "./portfolio.png",
         description:
             "Explore my portfolio website, a digital canvas where my skills and creativity come to life, offering a glimpse into my unique talents and projects.",
-        link: "https://www.google.com",
+        link: "https://portfolio-two-liard-60.vercel.app/",
         tech: [{ img: "./react.svg", name: "React" }]
     }
 ];
@@ -30,29 +30,31 @@ const Projects = () => {
                 <div className="flex projects">
                     {projects.map((project, index) => {
                         return (
-                            <Project key={index}>
-                                <img src={project.img} alt={project.name} />
-                                <span className="name">{project.name}</span>
-                                <div className="desc">
-                                    {project.description}
-                                </div>
-                                <span className="name">Technologies</span>
-                                {
-                                    <div className="flex tech">
-                                        {project.tech.map((tech, index) => {
-                                            return (
-                                                <div key={index}>
-                                                    <img
-                                                        src={tech.img}
-                                                        alt={tech.name}
-                                                    />
-                                                    {/* <span>{tech.name}</span> */}
-                                                </div>
-                                            );
-                                        })}
+                            <a key={index} href={project.link} target="_blank">
+                                <Project>
+                                    <img src={project.img} alt={project.name} />
+                                    <span className="name">{project.name}</span>
+                                    <div className="desc">
+                                        {project.description}
                                     </div>
-                                }
-                            </Project>
+                                    <span className="tech">Technologies</span>
+                                    {
+                                        <div className="flex tech">
+                                            {project.tech.map((tech, index) => {
+                                                return (
+                                                    <div key={index}>
+                                                        <img
+                                                            src={tech.img}
+                                                            alt={tech.name}
+                                                        />
+                                                        {/* <span>{tech.name}</span> */}
+                                                    </div>
+                                                );
+                                            })}
+                                        </div>
+                                    }
+                                </Project>
+                            </a>
                         );
                     })}
                 </div>
