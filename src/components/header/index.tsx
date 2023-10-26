@@ -1,12 +1,12 @@
 import { HeaderCss } from "./style";
 import { TypeAnimation } from "react-type-animation";
-
+import Socials from "../socials";
 const Header: React.FC = () => {
     return (
         <HeaderCss>
             <div className="center">
                 <div className="left">
-                    <span className="small-txt">Hola!</span>
+                    <span className="small-txt txt-1">Hola!</span>
                     <h1 className="highlight">I'm Akshita</h1>
                     <h1>Goyal</h1>
                     <TypeAnimation
@@ -23,13 +23,17 @@ const Header: React.FC = () => {
                         className="small-txt"
                         repeat={Infinity}
                     />
+                    <div className="mb">
+                        {" "}
+                        <Socials />
+                    </div>
                     <button className="btn">Resume</button>
                 </div>
                 <div className="right">
                     <img
                         src="./akshita.jpg"
                         alt="Akshita Goyal"
-                        className="vertical-center "
+                        className="profile"
                     />
                 </div>
             </div>

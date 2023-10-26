@@ -6,9 +6,8 @@ export const Project = styled.div`
     padding: 12px;
     display: flex;
     flex-direction: column;
-    margin: 20px 0 0 20px;
     font-size: 18px;
-    max-width: 288px;
+    max-width: 260px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     cursor: pointer;
     min-height: 390px;
@@ -52,6 +51,7 @@ export const Block = styled.div`
     margin-top: 100px;
     .projects {
         margin-top: 30px;
-        // display: table;
+        row-gap: 20px;
+        column-gap: 20px;
     }
 `;

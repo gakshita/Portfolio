@@ -52,8 +52,10 @@ const Skills = () => {
                 {skills.map((skill, index) => {
                     return (
                         <Skill key={index}>
-                            <img src={skill.logo} alt={skill.name} />
-                            <span>{skill.name}</span>
+                            <div className="skill-container">
+                                <img src={skill.logo} alt={skill.name} />
+                                <span>{skill.name}</span>
+                            </div>
                         </Skill>
                     );
                 })}

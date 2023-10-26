@@ -22,4 +22,9 @@ export const Footer = styled.div`
     color: #7d8294;
     padding: 2rem;
     padding-top: 5rem;
+
+    @media (max-width: 600px) {
+        padding-top: 3rem;
+        font-size: 14px;
+    }
 `;

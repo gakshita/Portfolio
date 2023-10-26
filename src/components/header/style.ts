@@ -13,6 +13,10 @@ export const HeaderCss = styled.div`
         display: flex;
         justify-content: space-between;
         width: 100%;
+
+        @media (max-width: 600px) {
+            flex-direction: column;
+        }
     }
     .left {
         text-align: initial;
@@ -33,6 +37,23 @@ export const HeaderCss = styled.div`
             font-size: 18px;
             margin-top: 20px;
         }
+
+        @media (max-width: 600px) {
+            text-align: center;
+
+            .btn {
+                margin: 20px auto 40px;
+            }
+            .small-txt {
+                font-size: 16px;
+                /* margin-bottom: 23px; */
+                line-height: 38px;
+            }
+        }
+
+        .txt-1 {
+            font-size: 24px;
+        }
     }
     .right {
         position: relative;
@@ -42,6 +63,22 @@ export const HeaderCss = styled.div`
             object-fit: none;
             margin-right: 40px;
             border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%;
+        }
+
+        @media (max-width: 600px) {
+            img {
+                height: 233px;
+                width: 215px;
+                margin-right: 0;
+            }
+        }
+
+        @media (min-width: 601px) {
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+            right: 0;
         }
     }
 `;

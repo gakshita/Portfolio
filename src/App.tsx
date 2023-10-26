@@ -18,7 +18,9 @@ function App() {
     return (
         <ThemeProvider theme={theme[currentTheme as keyof ITheme]}>
             <Root>
-                <Navbar />
+                <div className="lt">
+                    <Navbar />
+                </div>
                 <div className="container">
                     <Header />
                     <Skills />
