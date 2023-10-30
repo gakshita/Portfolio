@@ -22,6 +22,16 @@ export const Skill = styled.div`
         display: flex;
         flex-direction: column;
     }
+
+    @keyframes scale_up {
+        0% {
+            transform: scale(0.5);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+    animation: scale_up 1s;
 `;
 
 export const Block = styled.div`

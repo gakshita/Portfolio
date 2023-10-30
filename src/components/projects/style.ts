@@ -10,7 +10,8 @@ export const Project = styled.div`
     max-width: 260px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     cursor: pointer;
-    min-height: 390px;
+    min-height: 421px;
+    animation: scale_up 1s;
 
     // display: table-cell;
     img {
@@ -45,10 +46,15 @@ export const Project = styled.div`
             margin-top: 10px;
         }
     }
+
+    &:hover {
+        transform: scale(1.05);
+        transition: transform 0.5s;
+    }
 `;
 
 export const Block = styled.div`
-    margin-top: 100px;
+    margin-top: 150px;
     .projects {
         margin-top: 30px;
         row-gap: 20px;

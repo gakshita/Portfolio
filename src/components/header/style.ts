@@ -18,12 +18,16 @@ export const HeaderCss = styled.div`
             flex-direction: column;
         }
     }
+
     .left {
         text-align: initial;
-
+        h1 {
+            animation: fade_in 2s;
+        }
         .small-txt {
             font-size: 24px;
             margin-bottom: 10px;
+            animation: fade_in 2s;
         }
 
         .btn {
@@ -63,6 +67,7 @@ export const HeaderCss = styled.div`
             object-fit: none;
             margin-right: 40px;
             border-radius: 30% 70% 67% 33% / 30% 30% 70% 70%;
+            animation: fade_in 1s;
         }
 
         @media (max-width: 600px) {

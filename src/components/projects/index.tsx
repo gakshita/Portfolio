@@ -4,7 +4,7 @@ const projects = [
         name: "Staking Platform",
         img: "./staking.png",
         description:
-            "Decentralized app that allows users to stake their tokens and earn rewards",
+            "Built a decentralized app that allows users to stake their tokens and earn rewards for astrogallery.io.",
         link: "https://staking.astrogallery.io/",
         tech: [
             { img: "./react.svg", name: "React" },
@@ -17,8 +17,19 @@ const projects = [
         img: "./portfolio.png",
         description:
             "Explore my portfolio website, a digital canvas where my skills and creativity come to life, offering a glimpse into my unique talents and projects.",
-        link: "https://portfolio-two-liard-60.vercel.app/",
+        link: "https://akshita.vercel.app/",
         tech: [{ img: "./react.svg", name: "React" }]
+    },
+    {
+        name: "Bet Game",
+        img: "./bet.png",
+        description:
+            "A Coin Flip game where you can bet on the outcome of the coin flip to help drive engagement and increase the token holders.",
+        link: "https://bets-delta.vercel.app/",
+        tech: [
+            { img: "./react.svg", name: "React" },
+            { img: "./django.svg", name: "Django" }
+        ]
     }
 ];
 const Projects = () => {

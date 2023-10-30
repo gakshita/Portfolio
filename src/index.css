@@ -76,3 +76,15 @@ h2 {
         display: none;
     }
 }
+
+@keyframes fade_in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* body * {
+    animation: fade_in 0.2s;
+} */
