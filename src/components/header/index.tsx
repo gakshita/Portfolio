@@ -27,7 +27,10 @@ const Header: React.FC = () => {
                         {" "}
                         <Socials />
                     </div>
-                    <button className="btn">Resume</button>
+                    {/* <button className="btn">Resume</button> */}
+                    <a href="mailto:akshitagoyal1516@gmail.com" className="btn">
+                        Contact Me
+                    </a>
                 </div>
                 <div className="right">
                     <img

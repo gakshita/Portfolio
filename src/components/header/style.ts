@@ -40,6 +40,7 @@ export const HeaderCss = styled.div`
             display: block;
             font-size: 18px;
             margin-top: 20px;
+            width: fit-content;
         }
 
         @media (max-width: 600px) {
