@@ -1,6 +1,17 @@
 import { Project, Block } from "./style";
 const projects = [
     {
+        name: "Givingly",
+        img: "./givingly.png",
+        description:
+            "A crowdfunding platform designed to assist individuals in raising awareness about important issues and gathering donations for their causes.",
+        link: "https://givingly.vercel.app/",
+        tech: [
+            { img: "./react.svg", name: "React" },
+            { img: "./django.svg", name: "Django" }
+        ]
+    },
+    {
         name: "Bet Game",
         img: "./bet.png",
         description:
